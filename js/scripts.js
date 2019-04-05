@@ -1,16 +1,16 @@
-$(document).ready(function() {
-  $("form #convert").submit(function(event){
-    event.preventDefault
+$(document).ready(function(){
 
-      var userNumber = parseInt($("input#numberChoice").val());
+  $("form#convert").submit(function(event){
+    event.preventDefault();
+
+      var userNumber = parseInt($("#numberChoiceInput").val());
       var result = beepBoop(userNumber);
 
-      $("#answerList").text(result);
-
-      var beepBoop = function(userNumber){
-        for(var i = 0; i <= userNumber; i++) {
-          if (userNumber )
-        }
+    function beepBoop(userNumber){
+      for(var i = 0; i <= userNumber.length; i++) {
+      //  userNumber.toString()
+        $("#answerList").text("<li>"+i+"</li>");
       }
+    }
   });
 });
