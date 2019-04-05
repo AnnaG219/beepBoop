@@ -3,7 +3,9 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = parseInt($("#numberChoiceInput").val());
     var result =(userNumber);
+
     $("#result").text(result);
+
     var result = function(userNumber) {
       return false
     }
