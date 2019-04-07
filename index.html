@@ -5,25 +5,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Beep Boop</title>
+    <title>2001 A Space Odyssey Translator</title>
   </head>
   <body>
     <div class="container">
-      <h1>Beeps and Boops</h1>
-        <p>Please Enter a Number, any number you'd like! Then submit and see what results you get!</p>
-      <form id="convert">
+      <h1>2001 A Space Odyssey Translator</h1>
+      <form id="translate">
         <div class="form-group">
-          <label for="numberChoice">Enter Your Number Here:</label>
-          <input type="number" id="numberChoiceInput" class="form-control">
+          <label for="userNum">Enter Your Number Here:</label>
+          <input type="number" id="userNum" class="form-control">
         </div>
 
-        <button type="submit" id="btn btn-danger">Submit For Your Results!</button>
+        <button type="submit" id="btn btn-danger">Submit For Results!</button>
 
       </form>
-      <div class="answerContain">
-        <ul id="answerList">
-            <p> <span id="result"></span></p>
-        </ul>
+      <div id="translatedList">
+        
       </div>
 
     </div>

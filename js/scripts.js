@@ -1,22 +1,24 @@
 $(document).ready(function() {
-  $("#convertform").submit(function(event) {
+  $("#translate").submit(function(event) {
     event.preventDefault();
-    var userNumber = parseInt($("#numberChoiceInput").val());
-    var result =(userNumber);
+    var userNumber = parseInt($("#userNum").val());
+    var result = ["Beep","Boop","I'm sorry Dave, I'm afraid I can't do that."]
 
-    $("#result").text(result);
+    $("#translatedList").text("");
 
-    var result = function(userNumber) {
-      return false
+    for (var i = 0; i <= userNumber; i++) {
+      var displayText = String(i);
+      if (displayText.indexOf("3") !== -1) {
+        displayText = result[2];
+      }
+      else if (displayText.indexOf("2") !== -1) {
+        displayText = result[1];
+      }
+      else if (displayText.indexOf("1") !== -1) {
+        displayText = result[0];
+      }
+
+      $("#translatedList").append("<p> " + displayText + "</p>");
     }
   });
 });
-
-//  var userString = userNumber.toString();
-  //  var stringChange = ["Beep","Boop", "I'm sorry Dave, I'm afraid I can't do that."]
-
-      //  userNumber.toString()
-      //$("#answerList").text("<li>"+i+"</li>");
-    //}
-//    }
-//  });
