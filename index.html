@@ -9,18 +9,24 @@
   </head>
   <body>
     <div class="container">
-      <h1>2001 A Space Odyssey Translator</h1>
+      <div class="jumbotron">
+        <h1 class="center">2001 A Space Odyssey Translator</h1>
+      </div>
       <form id="translate">
         <div class="form-group">
-          <label for="userNum">Enter Your Number Here:</label>
-          <input type="number" id="userNum" class="form-control">
+          <label class="labelSize" for="userName">Please Enter Your Name Here:</label>
+          <input type="text" id="userName" class="form-control inputs">
+        </div>
+        <div class="form-group">
+          <label class="labelSize" for="userNum">Enter Your Number Here:</label>
+          <input type="number" id="userNum" class="form-control inputs">
         </div>
 
-        <button type="submit" id="btn btn-danger">Submit For Results!</button>
+        <button type="submit" class="btn btn-danger">Submit For Results!</button>
 
       </form>
       <div id="translatedList">
-        
+
       </div>
 
     </div>
