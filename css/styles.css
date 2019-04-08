@@ -2,6 +2,7 @@ body {
   text-align: center;
   font-family: monospace;
   color:  #39ff14;
+  background-color: black;
 }
 
 .labelSize {
@@ -9,13 +10,23 @@ body {
   color:  #39ff14;
 }
 
-inputs {
+.inputs {
+  text-align: center;
   font-size: 16px;
+  color: red;
   font-family: monospace;
-  color: darkred;
 }
 p {
   font-size: 16px;
   font-family: monospace;
   color: red;
+}
+#translate {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jumbotron {
+  background-color: darkgray;
+  font-size: 28px;
 }
