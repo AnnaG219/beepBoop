@@ -26,7 +26,7 @@ A webpage that uses array and for loop concepts. With those concepts this progra
 2. Open Finder and search for 'beepBoop' repository
 3. Double click 'beepBoop' and try inputting a number yourself to see what you get back.
 
-- Or try it out here:
+[Or Click Here to Visit](https://annag219.github.io/beepBoop/)
 
 ### **Known Bugs**
 
